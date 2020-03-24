@@ -14,3 +14,22 @@ grid point and maintain the same heading.
 Assume that the square directly North from (x, y) is (x, y+1).
 Write a simple application that takes a user’s starting point, and then directional instructions and displays the resulting
 position to the user.
+
+## Getting Started
+1. First clone the repository, cd into the directory and install the dependencies:
+
+    ```
+    $ git clone https://github.com/NaseebullahSafi/react_position.git
+    $ cd react_position
+    $ npm install
+    ```
+2. Run the application:
+
+    ```
+    $ npm start
+    ```
+3. Test the application:
+
+    ```
+    $ npm test
+    ```
