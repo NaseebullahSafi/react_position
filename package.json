@@ -1,24 +1,35 @@
 {
   "name": "react_position",
-  "version": "1.0.0",
-  "description": "A squad of robotic rovers are to be landed by NASA on a plateau on Mars. This plateau, which is curiously rectangular,\r must be navigated by the rovers so that their on-board cameras can get a complete view of the surrounding terrain to\r send back to Earth.",
-  "main": "Main.js",
-  "scripts": {
-    "start": "node ./Main.js",
-    "test": "mocha"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/NaseebullahSafi/react_position.git"
-  },
-  "author": "Naseebullah Safi",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/NaseebullahSafi/react_position/issues"
-  },
-  "homepage": "https://github.com/NaseebullahSafi/react_position#readme",
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
-    "chai": "^4.2.0",
-    "mocha": "^7.1.1"
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.5.0",
+    "@testing-library/user-event": "^7.2.1",
+    "node-sass": "^4.13.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-scripts": "3.4.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
