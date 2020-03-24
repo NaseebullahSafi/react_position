@@ -4,7 +4,7 @@ import Mars from './organisms/Mars';
 
 const App = () => (
   <div className="App">
-    <Mars />
+    <Mars dimension={[4, 5]} />
   </div>
 )
 
