@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=Dosis&display=swap');
-
 .mars {
     background-color: white;
     border-radius: 5px;
     box-shadow: 0 0 12px -6px #d0d4d6;
-    margin: 10px;
+    margin: 0 10px;
+    height: 684px;
+    overflow: auto;
     width: 100%;
 
     &__grid {
@@ -17,11 +17,11 @@
         width: 100%;
 
         &-item {
-            align-items: flex-start;
+            align-items: center;
             background-color: white;
             display: flex;
             height: 150px;
-            justify-content: flex-end;
+            justify-content: center;
             padding: 10px;
             position: relative;
             transition: all .25s ease-in;
@@ -37,16 +37,18 @@
                 border-radius: 51px;
                 color: #616a71;
                 display: flex;
-                font-family: 'Dosis', sans-serif;
                 font-weight: bolder;
                 height: 25px;
                 justify-content: center;
                 min-width: 40px;
                 padding: 3px 17px;
+                position: absolute;
+                right: 18px;
+                top: 13px;
                 transition: all .25s ease-in;
             }
-            
-            &:hover {
+
+            &--active {
                 background-color: #2bc2a3;
                 border-radius: 5px;
                 box-shadow: 0 0 8px -3px #4a5e69;

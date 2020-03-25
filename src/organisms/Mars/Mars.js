@@ -1,26 +1,37 @@
 import React from "react";
 import './Mars.scss';
+import robot from "../../assets/icons/chevron-right.svg"
 
-const Grid = ({matrix}) => (
+const includes = (arrOfArrs, arr) => arrOfArrs.some(a => arr.every((v, i) => v === a[i]));
+
+const Grid = ({matrix, rovers}) => (
     <ul className="mars mars__grid">
         {
-            matrix.map((el, i) => el.map(inner => (
-                <li className="mars__grid-item" key={`(${i},${inner})`}>
-                    <div className="coordinates">{inner}</div>
+            matrix.map((el, i) => el.map(j => (
+                <li className={`mars__grid-item ${includes(rovers, j.arr) ? 'mars__grid-item--active' : ''}`} key={j.coord}>
+                    <div className="coordinates">{j.coord}</div>
+                    {
+                        rovers.map((rover, i) => rover[0] === j.arr[0] && rover[1] === j.arr[1] && (
+                            <img src={robot} key={i} />
+                        ))
+                    }
                 </li>
             )))
         }
     </ul>
 )
 
-const Mars = ({dimension}) => {
+const Mars = ({dimension, rovers}) => {
     const [X, Y] = dimension
     const matrix = Array(Y).fill().map(() => Array(X).fill('-'));
     const newMatrix = []
 
     for (let i = 0; i < X; i++) {
         for (let j = Y - 1; j >= 0; j--) {
-            matrix[i][j] = `( ${j} , ${i} )`
+            matrix[i][j] = {
+                coord: `( ${j} , ${i} )`,
+                arr: [j, i]
+            }
         }
     }
 
@@ -30,7 +41,7 @@ const Mars = ({dimension}) => {
 
     return (
         <section id="mars" className="mars">
-            <Grid matrix={newMatrix} />
+            <Grid matrix={newMatrix} rovers={rovers} />
         </section>
     )
 }
