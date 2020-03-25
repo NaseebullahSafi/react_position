@@ -13,6 +13,7 @@ const App = () => {
       <h1 className="app__title">The Wedding Shop (Mars Rover)</h1>
       <div className="app__container">
         <Controls
+          dimension={[4, 5]}
           onUpdate={updateRovers}
         />
 

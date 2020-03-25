@@ -12,7 +12,11 @@ const Grid = ({matrix, rovers}) => (
                     <div className="coordinates">{j.coord}</div>
                     {
                         rovers.map((rover, i) => rover.x === j.arr[0] && rover.y === j.arr[1] && (
-                            <img src={robot} key={i} />
+                            <img 
+                                key={i}
+                                src={robot}
+                                className={`rover-face rover-face--${rover.face}`}
+                            />
                         ))
                     }
                 </li>

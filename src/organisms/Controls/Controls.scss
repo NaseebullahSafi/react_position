@@ -9,6 +9,17 @@
     flex-direction: column;
     justify-content: flex-start;
     padding: 10px;
+    position: relative;
+
+    .close-icon {
+        align-self: flex-end;
+        margin-bottom: 10px;
+        cursor: pointer;
+
+        &:hover {
+            stroke: #d06262;
+        }
+    }
 
     &__title {
         color: white;
