@@ -1,0 +1,19 @@
+.input {
+    background-color: #4d596114;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin: 0 11px;
+    outline: none;
+    padding: 6px;
+    text-align: center;
+    transition: all .25s ease-in-out;
+    width: 58px;
+
+    &:focus, &:active {
+        background-color: #2bc2a3;
+        box-shadow: 0 0 4px -2px #4d5961;
+        transform: scale(1.08);
+    }
+}

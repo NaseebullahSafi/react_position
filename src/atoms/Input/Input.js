@@ -1,7 +1,10 @@
 import React from 'react'
+import './Input.scss'
 
-const Input = () => {
-
-}
+/**
+ * Input component.
+ * @param {Object} props 
+ */
+const Input = props => <input className="input" {...props} />
 
 export default Input;

@@ -4,7 +4,7 @@ import Mars from './organisms/Mars';
 import Controls from './organisms/Controls';
 
 const App = () => {
-  const [rovers, setRovers] = useState([[0, 0]]);
+  const [rovers, setRovers] = useState([]);
 
   const updateRovers = rovers => setRovers(rovers);
 

@@ -2,7 +2,7 @@ import React from "react";
 import './Mars.scss';
 import robot from "../../assets/icons/chevron-right.svg"
 
-const includes = (arrOfArrs, arr) => arrOfArrs.some(a => arr.every((v, i) => v === a[i]));
+const includes = (arrOfArrs, arr) => arrOfArrs.some(a => arr.every((v, i) => v === [a.x, a.y][i]));
 
 const Grid = ({matrix, rovers}) => (
     <ul className="mars mars__grid">
@@ -11,7 +11,7 @@ const Grid = ({matrix, rovers}) => (
                 <li className={`mars__grid-item ${includes(rovers, j.arr) ? 'mars__grid-item--active' : ''}`} key={j.coord}>
                     <div className="coordinates">{j.coord}</div>
                     {
-                        rovers.map((rover, i) => rover[0] === j.arr[0] && rover[1] === j.arr[1] && (
+                        rovers.map((rover, i) => rover.x === j.arr[0] && rover.y === j.arr[1] && (
                             <img src={robot} key={i} />
                         ))
                     }

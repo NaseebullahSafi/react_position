@@ -34,15 +34,76 @@
     }
 
     &__rover {
-        width: 100%;
-        min-height: 80px;
-        display: flex;
         align-items: flex-start;
+        background-color: white;
+        border-radius: 5px;
+        box-shadow: 0 0 2px 0px #4c555d;
+        display: flex;
+        flex-direction: column;
+        margin: 10px 0;
+        min-height: 80px;
+        padding: 10px;
+        width: 100%;
+        animation: slideIn 1s cubic-bezier(.17,.67,.44,1.04) forwards;
 
         .position {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            width: 100%;
             span {
-                color: white;
+                color: #4d5961;
+                font-weight: bolder;
             }
         }
+
+        .path {
+            margin: 10px 0;
+            width: 100%;
+            input {
+                width: 100%;
+                margin: 0;
+                pointer-events: none;
+                opacity: 0.6;
+                background-color: #2bc2a3;
+                color: white;
+                box-shadow: none;
+            }
+        }
+    }
+
+    &__actions, &__actions .item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__actions {
+
+        .item {
+            margin: 0 5px;
+
+            svg {
+                transition: all .15s ease-in-out;
+            }
+
+            &:hover {
+                cursor: pointer;
+                svg {
+                    stroke: #2bc2a3;
+                }
+            }
+        }
+    }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
