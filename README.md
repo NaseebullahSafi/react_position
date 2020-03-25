@@ -1,4 +1,5 @@
 # Mars Rover (The Wedding Shop)
+![Homepage](https://raw.githubusercontent.com/NaseebullahSafi/react_position/master/src/assets/img/homepage.PNG)
 A squad of robotic rovers are to be landed by NASA on a plateau on Mars. This plateau, which is curiously rectangular,
 must be navigated by the rovers so that their on-board cameras can get a complete view of the surrounding terrain to
 send back to Earth.
