@@ -16,6 +16,22 @@ Assume that the square directly North from (x, y) is (x, y+1).
 Write a simple application that takes a user’s starting point, and then directional instructions and displays the resulting
 position to the user.
 
+## Design Process
+
+### Step 1
+At first I started to brainstorm the key components within the problem, i.e. rovers and mars (board, if you will). 
+1. The plateau is a simple (x, y) board with an initial dimension set to (5, 5) or (6, 6) starting from 0th index.
+2. The rover (robot) is a 1 unit object located at the origin of the board (0, 0)/bottom left.
+
+### Step 2
+I set out for design inspiration using my favourite site, [Dribbble](https://dribbble.com/).
+
+### Step 3
+After deciding on few designs, I like to follow atomic design and set out to structure the frontend by leverageing atoms, molecules, and organisms.
+
+### Step 4
+Amongst many react pattern, I decided to use functional components instead of class based and making use of React hooks.
+
 ## Available Scripts
 
 In the project directory, you can run:
