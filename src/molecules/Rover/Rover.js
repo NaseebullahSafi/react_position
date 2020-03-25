@@ -1,8 +1,8 @@
 import React from 'react'
-import plus from '../../assets/icons/plus.svg'
+import PropTypes from 'prop-types'
+import Icon from '../Icon/Icon'
 import Input from '../../atoms/Input'
 import './Rover.scss'
-import Icon from '../Icon/Icon'
 
 /**
  * Will determine ((x || y) + 1) move based on the current
@@ -191,5 +191,25 @@ const Rover = ({ x, y, face, path, mars, onChange, onDelete }) => (
         </div>
     </div>
 )
+
+Rover.defaultProps = {
+    x: 0,
+    y: 0,
+    face: 'N',
+    path: '',
+    mars: [6, 6],
+    onChange: () => {},
+    onDelete: () => {}
+}
+
+Rover.propTypes = {
+    x: PropTypes.number,
+    y: PropTypes.number,
+    face: PropTypes.string,
+    path: PropTypes.string,
+    mars: PropTypes.array,
+    onChange: PropTypes.func,
+    onDelete: PropTypes.func
+}
 
 export default Rover

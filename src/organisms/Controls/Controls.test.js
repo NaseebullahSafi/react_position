@@ -1,12 +1,12 @@
 import React from 'react';
 import { render, cleanup } from '@testing-library/react';
-import Rover from './Rover';
+import Controls from './Controls';
 
 afterEach(cleanup)
 
-describe('Rover Component', () => {
+describe('Controls Component', () => {
   test('Matches the snapshot', () => {
-    const { asFragment } = render(<Rover />);
+    const { asFragment } = render(<Controls onUpdate={() => {}} />);
     expect(asFragment()).toMatchSnapshot()
   })
 })

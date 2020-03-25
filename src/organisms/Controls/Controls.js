@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react'
+import Proptypes from 'prop-types'
+import Rover from '../../molecules/Rover/Rover'
 import plus from '../../assets/icons/plus.svg'
 import './Controls.scss'
-import Rover from '../../molecules/Rover/Rover'
 
 /**
  * Will render the control container which will allow users to
@@ -56,6 +57,16 @@ const Controls = ({ dimension, onUpdate }) => {
             </div>
         </div>
     )
+}
+
+Controls.defaultProps = {
+    dimension: [6, 6],
+    onUpdate: () => {}
+}
+
+Controls.propTypes = {
+    dimension: Proptypes.array,
+    onUpdate: Proptypes.func
 }
 
 export default Controls;

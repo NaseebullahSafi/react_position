@@ -1,0 +1,139 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Rover Component Matches the snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="rover"
+  >
+    <div
+      class="rover__icon rover__icon--close"
+    >
+      <svg
+        fill="none"
+        height="24"
+        stroke="#4d5961"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        viewBox="0 0 24 24"
+        width="24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <line
+          x1="18"
+          x2="6"
+          y1="6"
+          y2="18"
+        />
+        <line
+          x1="6"
+          x2="18"
+          y1="6"
+          y2="18"
+        />
+      </svg>
+    </div>
+    <div
+      class="rover__pos-container"
+    >
+      <div>
+        <span>
+          Pos ( x, y, face ): 
+        </span>
+        <input
+          class="input"
+          placeholder="0 0 N"
+        />
+      </div>
+      <div
+        class="rover__cta-container"
+      >
+        <div
+          class="rover__cta-item"
+        >
+          <svg
+            fill="none"
+            height="24"
+            stroke="#4d5961"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            width="24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <line
+              x1="19"
+              x2="5"
+              y1="12"
+              y2="12"
+            />
+            <polyline
+              points="12 19 5 12 12 5"
+            />
+          </svg>
+        </div>
+        <div
+          class="rover__cta-item"
+        >
+          <svg
+            fill="none"
+            height="24"
+            stroke="#d06262"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            width="24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle
+              cx="12"
+              cy="12"
+              r="2"
+            />
+            <path
+              d="M16.24 7.76a6 6 0 0 1 0 8.49m-8.48-.01a6 6 0 0 1 0-8.49m11.31-2.82a10 10 0 0 1 0 14.14m-14.14 0a10 10 0 0 1 0-14.14"
+            />
+          </svg>
+        </div>
+        <div
+          class="rover__cta-item"
+        >
+          <svg
+            fill="none"
+            height="24"
+            stroke="#4d5961"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            width="24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <line
+              x1="5"
+              x2="19"
+              y1="12"
+              y2="12"
+            />
+            <polyline
+              points="12 5 19 12 12 19"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div
+      class="rover__path"
+    >
+      <input
+        class="input"
+        placeholder="Command path"
+        readonly=""
+        value=""
+      />
+    </div>
+  </div>
+</DocumentFragment>
+`;

@@ -1,10 +1,11 @@
 import React from "react";
-import './Mars.scss';
+import Proptypes from 'prop-types'
 import robot from "../../assets/icons/chevron-right.svg"
+import './Mars.scss';
 
 const includes = (arrOfArrs, arr) => arrOfArrs.some(a => arr.every((v, i) => v === [a.x, a.y][i]));
 
-const Grid = ({matrix, rovers}) => (
+const Grid = ({ matrix, rovers }) => (
     <ul className="mars mars__grid">
         {
             matrix.map((el, i) => el.map(j => (
@@ -12,7 +13,7 @@ const Grid = ({matrix, rovers}) => (
                     <div className="coordinates">{j.coord}</div>
                     {
                         rovers.map((rover, i) => rover.x === j.arr[0] && rover.y === j.arr[1] && (
-                            <img 
+                            <img
                                 key={i}
                                 src={robot}
                                 className={`rover-face rover-face--${rover.face}`}
@@ -25,7 +26,7 @@ const Grid = ({matrix, rovers}) => (
     </ul>
 )
 
-const Mars = ({dimension, rovers}) => {
+const Mars = ({ dimension, rovers }) => {
     const [X, Y] = dimension
     const matrix = Array(Y).fill().map(() => Array(X).fill('-'));
     const newMatrix = []
@@ -48,6 +49,21 @@ const Mars = ({dimension, rovers}) => {
             <Grid matrix={newMatrix} rovers={rovers} />
         </section>
     )
+}
+
+Mars.defaultProps = {
+    dimension: [6, 6],
+    rovers: [{
+        x: 0,
+        y: 0,
+        face: 'N',
+        path: ''
+    }]
+}
+
+Mars.propTypes = {
+    dimension: Proptypes.array,
+    rovers: Proptypes.array
 }
 
 export default Mars;

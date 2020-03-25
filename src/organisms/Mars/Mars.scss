@@ -1,87 +1,86 @@
 .mars {
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 0 12px -6px #d0d4d6;
+  margin: 0 10px;
+  height: 600px;
+  overflow: auto;
+  width: 100%;
+
+  &__grid {
     background-color: white;
-    border-radius: 5px;
-    box-shadow: 0 0 12px -6px #d0d4d6;
-    margin: 0 10px;
-    height: 600px;
-    overflow: auto;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
     width: 100%;
 
-    &__grid {
-        background-color: white;
+    &-item {
+      align-items: center;
+      background-color: white;
+      display: flex;
+      height: 150px;
+      justify-content: center;
+      padding: 10px;
+      position: relative;
+      transition: all 0.25s ease-in;
+      width: calc(100% / 6);
+      border-bottom: 1px solid #e7eaeb;
+      &:nth-child(n):not(:nth-child(6n)) {
+        border-right: 1px solid #e7eaeb;
+      }
+
+      .coordinates {
+        align-items: center;
+        border: 1px solid #efefef;
+        border-radius: 51px;
+        color: #616a71;
         display: flex;
-        flex-wrap: wrap;
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        width: 100%;
+        font-weight: bolder;
+        height: 25px;
+        justify-content: center;
+        min-width: 40px;
+        padding: 3px 17px;
+        position: absolute;
+        right: 18px;
+        top: 13px;
+        transition: all 0.25s ease-in;
+      }
 
-        &-item {
-            align-items: center;
-            background-color: white;
-            display: flex;
-            height: 150px;
-            justify-content: center;
-            padding: 10px;
-            position: relative;
-            transition: all .25s ease-in;
-            width: calc(100% / 6);
-            border-bottom: 1px solid #e7eaeb;
-            &:nth-child(n):not(:nth-child(6n)) {
-                border-right: 1px solid #e7eaeb;
+      &--active {
+        background-color: #2bc2a3;
+        border-radius: 5px;
+        box-shadow: 0 0 8px -3px #4a5e69;
+        z-index: 1;
+
+        .coordinates {
+          background-color: white;
+          color: #979ea6;
+          transform: scale(1.1);
+          box-shadow: 1px 1px 3px 0px #898c8e;
+
+          & ~ .rover-face {
+            transition: all 0.25s cubic-bezier(0.17, 0.67, 0.44, 1.04);
+
+            &--N {
+              transform: rotate(270deg);
             }
 
-            .coordinates {
-                align-items: center;
-                border: 1px solid #efefef;
-                border-radius: 51px;
-                color: #616a71;
-                display: flex;
-                font-weight: bolder;
-                height: 25px;
-                justify-content: center;
-                min-width: 40px;
-                padding: 3px 17px;
-                position: absolute;
-                right: 18px;
-                top: 13px;
-                transition: all .25s ease-in;
+            &--E {
+              transform: rotate(0deg);
             }
 
-            &--active {
-                background-color: #2bc2a3;
-                border-radius: 5px;
-                box-shadow: 0 0 8px -3px #4a5e69;
-                z-index: 1;
-
-                .coordinates {
-                    background-color: white;
-                    color: #979ea6;
-                    transform: scale(1.1);
-                    box-shadow: 1px 1px 3px 0px #898c8e;
-
-                    & ~ .rover-face {
-                        transition: all .25s cubic-bezier(.17,.67,.44,1.04);
-                        
-                        &--N {
-                            transform: rotate(270deg);
-                        }
-
-                        &--E {
-                            transform: rotate(0deg);
-                        }
-
-                        &--S {
-                            transform: rotate(90deg);
-                        }
-
-                        &--W {
-                            transform: rotate(180deg);
-                        }
-
-                    }
-                }
+            &--S {
+              transform: rotate(90deg);
             }
+
+            &--W {
+              transform: rotate(180deg);
+            }
+          }
         }
+      }
     }
+  }
 }

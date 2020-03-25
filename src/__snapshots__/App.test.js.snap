@@ -1,0 +1,505 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App Component Matches the snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="app"
+  >
+    <h1
+      class="app__title"
+    >
+      The Wedding Shop (Mars Rover)
+    </h1>
+    <div
+      class="app__container"
+    >
+      <div
+        class="controls"
+      >
+        <h1
+          class="controls__title"
+        >
+          Controls
+        </h1>
+        <div
+          class="rover"
+        >
+          <div
+            class="rover__icon rover__icon--close"
+          >
+            <svg
+              fill="none"
+              height="24"
+              stroke="#4d5961"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <line
+                x1="18"
+                x2="6"
+                y1="6"
+                y2="18"
+              />
+              <line
+                x1="6"
+                x2="18"
+                y1="6"
+                y2="18"
+              />
+            </svg>
+          </div>
+          <div
+            class="rover__pos-container"
+          >
+            <div>
+              <span>
+                Pos ( x, y, face ): 
+              </span>
+              <input
+                class="input"
+                placeholder="0 0 N"
+              />
+            </div>
+            <div
+              class="rover__cta-container"
+            >
+              <div
+                class="rover__cta-item"
+              >
+                <svg
+                  fill="none"
+                  height="24"
+                  stroke="#4d5961"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <line
+                    x1="19"
+                    x2="5"
+                    y1="12"
+                    y2="12"
+                  />
+                  <polyline
+                    points="12 19 5 12 12 5"
+                  />
+                </svg>
+              </div>
+              <div
+                class="rover__cta-item"
+              >
+                <svg
+                  fill="none"
+                  height="24"
+                  stroke="#d06262"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle
+                    cx="12"
+                    cy="12"
+                    r="2"
+                  />
+                  <path
+                    d="M16.24 7.76a6 6 0 0 1 0 8.49m-8.48-.01a6 6 0 0 1 0-8.49m11.31-2.82a10 10 0 0 1 0 14.14m-14.14 0a10 10 0 0 1 0-14.14"
+                  />
+                </svg>
+              </div>
+              <div
+                class="rover__cta-item"
+              >
+                <svg
+                  fill="none"
+                  height="24"
+                  stroke="#4d5961"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <line
+                    x1="5"
+                    x2="19"
+                    y1="12"
+                    y2="12"
+                  />
+                  <polyline
+                    points="12 5 19 12 12 19"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div
+            class="rover__path"
+          >
+            <input
+              class="input"
+              placeholder="Command path"
+              readonly=""
+              value=""
+            />
+          </div>
+        </div>
+        <div
+          class="controls__add"
+        >
+          <img
+            src="plus.svg"
+          />
+        </div>
+      </div>
+      <section
+        class="mars"
+        id="mars"
+      >
+        <ul
+          class="mars mars__grid"
+        >
+          <li
+            class="mars__grid-item "
+          >
+            <div
+              class="coordinates"
+            >
+              ( 0 , 5 )
+            </div>
+          </li>
+          <li
+            class="mars__grid-item "
+          >
+            <div
+              class="coordinates"
+            >
+              ( 1 , 5 )
+            </div>
+          </li>
+          <li
+            class="mars__grid-item "
+          >
+            <div
+              class="coordinates"
+            >
+              ( 2 , 5 )
+            </div>
+          </li>
+          <li
+            class="mars__grid-item "
+          >
+            <div
+              class="coordinates"
+            >
+              ( 3 , 5 )
+            </div>
+          </li>
+          <li
+            class="mars__grid-item "
+          >
+            <div
+              class="coordinates"
+            >
+              ( 4 , 5 )
+            </div>
+          </li>
+          <li
+            class="mars__grid-item "
+          >
+            <div
+              class="coordinates"
+            >
+              ( 5 , 5 )
+            </div>
+          </li>
+          <li
+            class="mars__grid-item "
+          >
+            <div
+              class="coordinates"
+            >
+              ( 0 , 4 )
+            </div>
+          </li>
+          <li
+            class="mars__grid-item "
+          >
+            <div
+              class="coordinates"
+            >
+              ( 1 , 4 )
+            </div>
+          </li>
+          <li
+            class="mars__grid-item "
+          >
+            <div
+              class="coordinates"
+            >
+              ( 2 , 4 )
+            </div>
+          </li>
+          <li
+            class="mars__grid-item "
+          >
+            <div
+              class="coordinates"
+            >
+              ( 3 , 4 )
+            </div>
+          </li>
+          <li
+            class="mars__grid-item "
+          >
+            <div
+              class="coordinates"
+            >
+              ( 4 , 4 )
+            </div>
+          </li>
+          <li
+            class="mars__grid-item "
+          >
+            <div
+              class="coordinates"
+            >
+              ( 5 , 4 )
+            </div>
+          </li>
+          <li
+            class="mars__grid-item "
+          >
+            <div
+              class="coordinates"
+            >
+              ( 0 , 3 )
+            </div>
+          </li>
+          <li
+            class="mars__grid-item "
+          >
+            <div
+              class="coordinates"
+            >
+              ( 1 , 3 )
+            </div>
+          </li>
+          <li
+            class="mars__grid-item "
+          >
+            <div
+              class="coordinates"
+            >
+              ( 2 , 3 )
+            </div>
+          </li>
+          <li
+            class="mars__grid-item "
+          >
+            <div
+              class="coordinates"
+            >
+              ( 3 , 3 )
+            </div>
+          </li>
+          <li
+            class="mars__grid-item "
+          >
+            <div
+              class="coordinates"
+            >
+              ( 4 , 3 )
+            </div>
+          </li>
+          <li
+            class="mars__grid-item "
+          >
+            <div
+              class="coordinates"
+            >
+              ( 5 , 3 )
+            </div>
+          </li>
+          <li
+            class="mars__grid-item "
+          >
+            <div
+              class="coordinates"
+            >
+              ( 0 , 2 )
+            </div>
+          </li>
+          <li
+            class="mars__grid-item "
+          >
+            <div
+              class="coordinates"
+            >
+              ( 1 , 2 )
+            </div>
+          </li>
+          <li
+            class="mars__grid-item "
+          >
+            <div
+              class="coordinates"
+            >
+              ( 2 , 2 )
+            </div>
+          </li>
+          <li
+            class="mars__grid-item "
+          >
+            <div
+              class="coordinates"
+            >
+              ( 3 , 2 )
+            </div>
+          </li>
+          <li
+            class="mars__grid-item "
+          >
+            <div
+              class="coordinates"
+            >
+              ( 4 , 2 )
+            </div>
+          </li>
+          <li
+            class="mars__grid-item "
+          >
+            <div
+              class="coordinates"
+            >
+              ( 5 , 2 )
+            </div>
+          </li>
+          <li
+            class="mars__grid-item "
+          >
+            <div
+              class="coordinates"
+            >
+              ( 0 , 1 )
+            </div>
+          </li>
+          <li
+            class="mars__grid-item "
+          >
+            <div
+              class="coordinates"
+            >
+              ( 1 , 1 )
+            </div>
+          </li>
+          <li
+            class="mars__grid-item "
+          >
+            <div
+              class="coordinates"
+            >
+              ( 2 , 1 )
+            </div>
+          </li>
+          <li
+            class="mars__grid-item "
+          >
+            <div
+              class="coordinates"
+            >
+              ( 3 , 1 )
+            </div>
+          </li>
+          <li
+            class="mars__grid-item "
+          >
+            <div
+              class="coordinates"
+            >
+              ( 4 , 1 )
+            </div>
+          </li>
+          <li
+            class="mars__grid-item "
+          >
+            <div
+              class="coordinates"
+            >
+              ( 5 , 1 )
+            </div>
+          </li>
+          <li
+            class="mars__grid-item mars__grid-item--active"
+          >
+            <div
+              class="coordinates"
+            >
+              ( 0 , 0 )
+            </div>
+            <img
+              class="rover-face rover-face--N"
+              src="chevron-right.svg"
+            />
+          </li>
+          <li
+            class="mars__grid-item "
+          >
+            <div
+              class="coordinates"
+            >
+              ( 1 , 0 )
+            </div>
+          </li>
+          <li
+            class="mars__grid-item "
+          >
+            <div
+              class="coordinates"
+            >
+              ( 2 , 0 )
+            </div>
+          </li>
+          <li
+            class="mars__grid-item "
+          >
+            <div
+              class="coordinates"
+            >
+              ( 3 , 0 )
+            </div>
+          </li>
+          <li
+            class="mars__grid-item "
+          >
+            <div
+              class="coordinates"
+            >
+              ( 4 , 0 )
+            </div>
+          </li>
+          <li
+            class="mars__grid-item "
+          >
+            <div
+              class="coordinates"
+            >
+              ( 5 , 0 )
+            </div>
+          </li>
+        </ul>
+      </section>
+    </div>
+  </div>
+</DocumentFragment>
+`;
